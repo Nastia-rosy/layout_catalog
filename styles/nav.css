@@ -14,7 +14,9 @@
   padding: 1.9em 0;
   position: relative;
   margin-left: 20px;
-  font-weight: 500; }
+  font-weight: 500;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s; }
 
 .nav__link:hover {
   color: var(--active-color); }
