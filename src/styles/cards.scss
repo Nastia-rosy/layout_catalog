@@ -36,6 +36,17 @@ $productCardGap: 48px;
     width: 160px;
     height: 134px;
     margin: 0 auto 45px;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      border: 3px solid #f3f3f3;
+      padding-top: 15px;
+      margin-top: -15px;
+      padding-bottom: 20px;
+      margin-bottom: 19px;
+      cursor: pointer;
+    }
   }
 
   &__title {
@@ -82,6 +93,8 @@ $productCardGap: 48px;
     line-height: 16px;
     text-decoration: none;
     border: 1px solid var(--active-color);
+
+    transition: background-color 0.3s, color 0.3s;
 
     &:hover {
       color: var(--active-color);
