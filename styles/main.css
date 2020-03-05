@@ -98,19 +98,13 @@
     width: 160px;
     height: 134px;
     margin: 0 auto 45px;
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s; }
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
     .card__image:hover {
-      -webkit-transform: scale(1.2, 1.2);
-              transform: scale(1.2, 1.2);
-      border: 3px solid #f3f3f3;
-      padding-top: 15px;
-      margin-top: -15px;
-      padding-bottom: 20px;
-      margin-bottom: 19px;
-      cursor: pointer; }
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
   .card__title {
     font-weight: 500;
     font-size: 12px;
