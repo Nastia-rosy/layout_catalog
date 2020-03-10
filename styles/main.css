@@ -77,11 +77,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /*width: $productCardWidth * 4 + $productCardGap * 3;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;*/
     margin: 0 auto; }
   .card:hover {
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
