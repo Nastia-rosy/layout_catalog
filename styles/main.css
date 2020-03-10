@@ -3,9 +3,8 @@
   padding: 0 50px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -55,16 +54,14 @@
   margin-left: 0; }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 200px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -72,21 +69,19 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 11px;
-  margin-bottom: 50px; }
+  margin-bottom: 2px; }
   .card-wrapper {
-    width: 944px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /*width: $productCardWidth * 4 + $productCardGap * 3;
+    justify-content: space-between;
+    flex-wrap: wrap;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;*/
     margin: 0 auto; }
   .card:hover {
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
@@ -167,13 +162,12 @@
       background-color: white; }
 
 .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(5, 15px);
+  grid-gap: 4px; }
   .stars__item {
     width: 15px;
     height: 15px;
-    margin-right: 4px;
     background-image: url("../images/star.svg");
     background-position: center;
     background-repeat: no-repeat; }

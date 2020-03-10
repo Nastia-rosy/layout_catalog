@@ -1,11 +1,10 @@
 .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: grid;
+  grid-template-columns: repeat(5, 15px);
+  grid-gap: 4px; }
   .stars__item {
     width: 15px;
     height: 15px;
-    margin-right: 4px;
     background-image: url("../images/star.svg");
     background-position: center;
     background-repeat: no-repeat; }
