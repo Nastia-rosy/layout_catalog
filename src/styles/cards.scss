@@ -2,23 +2,27 @@ $productCardWidth: 200px;
 $productCardGap: 48px;
 
 .card {
-  display: flex;
+  display: grid;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 200px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   padding: 30px 0 15px;
   box-sizing: border-box;
   font-size: 11px;
-  margin-bottom: 50px;
+  margin-bottom: 2px;
 
   &-wrapper {
-    width: $productCardWidth * 4 + $productCardGap * 3;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 48px;
+    justify-content: center;
+    /*width: $productCardWidth * 4 + $productCardGap * 3;
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;*/
     margin: 0 auto;
   }
 
